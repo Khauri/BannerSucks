@@ -8,19 +8,19 @@
     {
         "matches" : ["*://banweb.wm.edu/*"],
         "exclude_matches" : ["*://banweb.wm.edu/wtlhelp/wm_twbhhelp.htm"],
-        "css" : ["global_style.css"],
-        "js" : ["header.js"],
+        "css" : ["css/global_style.css"],
+        "js" : ["js/header.js"],
         "run_at" : "document_end"
     },
     {
         "matches" : ["*://banweb.wm.edu/*"],
         "exclude_matches" : ["*://banweb.wm.edu/wtlhelp/wm_twbhhelp.htm","*://banweb.wm.edu/pls/PROD/twbkwbis.P_WWWLogin", "*://banweb.wm.edu/pls/PROD/twbkwbis.P_WWWLogin"],
-        "js" : ["navbar.js"],
+        "js" : ["js/navbar.js"],
         "run_at" : "document_end"
     },
     {
         "matches" : ["*://banweb.wm.edu/pls/PROD/twbkwbis.P_WWWLogin"],
-        "css" : ["login_page.css"]
+        "css" : ["css/login_page.css"]
     }
   ],
   "web_accessible_resources": ["images/*"],
