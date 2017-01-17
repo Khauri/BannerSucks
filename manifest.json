@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+
+  "name": "Banner Sucks",
+  "description": "Fixes the awuflness that is Banner",
+  "version": "1.0",
+  "content_scripts" : [
+    {
+        "matches" : ["*://banweb.wm.edu/*"],
+        "exclude_matches" : ["*://banweb.wm.edu/wtlhelp/wm_twbhhelp.htm"],
+        "css" : ["global_style.css"],
+        "js" : ["header.js"],
+        "run_at" : "document_end"
+    },
+    {
+        "matches" : ["*://banweb.wm.edu/*"],
+        "exclude_matches" : ["*://banweb.wm.edu/wtlhelp/wm_twbhhelp.htm","*://banweb.wm.edu/pls/PROD/twbkwbis.P_WWWLogin", "*://banweb.wm.edu/pls/PROD/twbkwbis.P_WWWLogin"],
+        "js" : ["navbar.js"],
+        "run_at" : "document_end"
+    },
+    {
+        "matches" : ["*://banweb.wm.edu/pls/PROD/twbkwbis.P_WWWLogin"],
+        "css" : ["login_page.css"]
+    }
+  ],
+  "web_accessible_resources": ["images/*"],
+  "permissions": [
+    "activeTab"
+  ]
+}

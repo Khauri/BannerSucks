@@ -1,0 +1,199 @@
+/**
+ * global_style.css
+ *
+ * ---------  CONTENTS -------------
+ * I.       Normalize Elements
+ * II.      Hide Unwanted Items
+ * III.     Banner Styles
+ * IV.      Navigation Menu Styles
+ * V.       Content Styles
+ * @author(s) AnotherBlackKid
+ */ 
+
+/* -------- I. NORMALIZE ELEMENTS --------- */
+ body
+ {
+     display : flex !important;
+     flex-direction : column !important;
+     margin : 0px !important;
+     padding : 0px !important;
+     background-image : none !important;
+ }
+
+ .pagebodydiv, 
+ .pagetitlediv, 
+ .footerbeforediv, 
+ .pagefooterdiv
+ {
+     margin-left : 2%;
+ }
+
+ /* Remove some things on the page */
+.pageheaderdiv1, 
+.pageheaderlinks2, 
+.pageheaderlinks
+{
+    display : none !important;
+}
+
+.pagetitlediv *
+{
+    background-color: inherit !important;
+}
+
+.banner-sucks.banner-sucks-header
+{
+padding : 20px;
+display : flex;
+flex-direction: row;
+justify-content: space-between;
+background-color : #115740;
+border-bottom : 3px solid #B9975B;
+}
+
+.banner-sucks-header img
+{
+    width : 100%;
+    height : 100%
+}
+
+.banner-sucks.wm-wordmark
+{
+    flex : 0 0 auto;
+    width : 141px;
+    height : 50px;
+}
+
+.banner-sucks.wm-cypher
+{
+    flex : 0 0 auto;
+    width : 50.37px;
+    height : 50px;
+}
+
+.banner-sucks-local-menu
+{
+    position : relative;
+    text-transform: uppercase;
+}
+
+.banner-sucks-local-menu > div{
+    position : absolute;
+    display : flex;
+    flex-direction : row;
+    bottom : 0px;
+    right : 0px;
+}
+
+.banner-sucks-local-menu a
+{
+    display : block;
+    flex : 1;
+    padding-left : 15px;
+    color : white !important;
+    text-decoration : none !important;
+    font-size : .9em;
+    position : relative;
+    float : left;
+}
+
+.banner-sucks-navigation
+{
+    font-family : "Avenir Next", Helvetica, Arial, sans-serif;
+    font-size : .9em;
+    position : relative;
+    width : 100%;
+}
+
+.banner-sucks-menu-header
+{
+    font-size : .85em;
+    color : black !important;
+}
+
+.banner-sucks-navigation a
+{
+    display : block;
+    text-decoration: none;
+    font-weight : 400;
+    border-bottom : 4px solid transparent;
+    white-space: nowrap;
+    color : dimgray !important;
+}
+
+.banner-sucks-navigation a:visited
+{
+    color : initial;
+}
+
+.banner-sucks-navigation a:hover
+{
+    color : darkblue !important;
+    text-decoration : none;
+}
+
+.banner-sucks-nav-item
+{
+    background-color : white;
+}
+
+.banner-sucks-nav-item:hover > a
+{
+    border-bottom : 3px solid #115740;
+}
+
+.banner-sucks-nav-item > a
+{
+    text-transform: uppercase;
+    padding : 16px;
+    padding-top : 28px;
+}
+
+.banner-sucks-navul
+{
+    display : flex;
+    justify-content : center;
+    padding : 0px;
+    margin : 0px;
+
+    /* Adds a pretty neat gradient effect to the page
+    * Might be a little strong though 
+    */
+    box-shadow: 0px 24px 40px rgba(0,0,0,.1);
+}
+
+.banner-sucks-nav-dropdown
+{
+    display : none;
+    max-height : 200px;
+    width : 100%;
+    font-size : .88em;
+    line-height : 2;
+    position : absolute;
+    background-color : white;
+    border-bottom : 2px solid #F0B323;
+    flex-direction : row;
+    justify-content : center;
+    left : 0px;
+    padding : 0px 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.banner-sucks-dropdown-col
+{
+    flex : 1;
+    max-width : 180px;
+    padding : 0px 20px;
+}
+/* Dropdown menu magic!
+ * When a main-menu item is hovered over change the display property of the dropdown 
+ */
+.banner-sucks-nav-item:hover > .banner-sucks-nav-dropdown
+{
+    display : flex;
+}
+
+.banner-sucks-dropdown-col~.banner-sucks-dropdown-col
+{
+    border-left : 1px solid lightgrey;
+}
