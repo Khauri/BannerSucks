@@ -1,13 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "Banner Sucks",
-  "description": "Fixes the awuflness that is Banner",
-  "version": "1.0",
-  "icons": { 
-    //"16": "icon16.png",
-    //"48": "icon48.png",
-    "128": "icon128.png" 
-  },
+  "name" : "Banner Sucks",
+  "description" : "Fixes the awuflness that is Banner",
+  "version" : "1.0",
+  "icons" : { 
+      "128": "icon128.png" 
+    },
   "content_scripts" : [
     {
         "matches" : ["*://banweb.wm.edu/*"],
@@ -27,8 +25,5 @@
         "css" : ["css/login_page.css"]
     }
   ],
-  "web_accessible_resources": ["images/*"],
-  "permissions": [
-    "activeTab"
-  ]
+  "web_accessible_resources": ["images/*"]
 }
