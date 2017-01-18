@@ -9,5 +9,5 @@ This extension makes these modifications:
 3. Adds a neat navigation menu making it easier to get to certain items from anywhere on the site
 
 ## Screenshots
-![A fresh new design](/screenshots/new_1.png)
-![Access the arsenal](/screenshots/new_2.png)
+![A fresh new design](/screenshots/new_1.jpg)
+![Access the arsenal](/screenshots/new_2.jpg)
