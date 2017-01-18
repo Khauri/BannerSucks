@@ -25,7 +25,7 @@
                         "</div>" +
                         "<div class='banner-sucks banner-sucks-local-menu'> "+
                             "<div>"+ // Needed in order to floor the following buttons
-                                "<a href=''> Help </a> <a href=''> Exit </a>"+ 
+                                "<a href='/wtlhelp/wm_twbhhelp.htm' onclick=\"window.open('/wtlhelp/wm_twbhhelp.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false;\"> Help </a> <a href='/pls/PROD/twbkwbis.P_Logout'> Exit </a>"+ 
                             "</div>"+
                         "</div>";
 

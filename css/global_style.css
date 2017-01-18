@@ -22,10 +22,16 @@
 
  .pagebodydiv, 
  .pagetitlediv, 
- .footerbeforediv, 
- .pagefooterdiv
+ .footerbeforediv,
+ .footerafterdiv, 
+ .pagefooterdiv,
+ .globalfooterdiv,
+ .globalafterdiv,
+ .poweredbydiv,
+ .banner_copyright
  {
      margin-left : 2%;
+     margin-right : 2%;
  }
 
  /* Remove some things on the page */
@@ -108,7 +114,7 @@ border-bottom : 3px solid #B9975B;
 .banner-sucks-menu-header
 {
     font-size : .85em;
-    color : black !important;
+    text-decoration: underline !important;
 }
 
 .banner-sucks-navigation a
@@ -155,7 +161,6 @@ border-bottom : 3px solid #B9975B;
     justify-content : center;
     padding : 0px;
     margin : 0px;
-
     /* Adds a pretty neat gradient effect to the page
     * Might be a little strong though 
     */
@@ -165,7 +170,6 @@ border-bottom : 3px solid #B9975B;
 .banner-sucks-nav-dropdown
 {
     display : none;
-    max-height : 200px;
     width : 100%;
     font-size : .88em;
     line-height : 2;
@@ -175,7 +179,7 @@ border-bottom : 3px solid #B9975B;
     flex-direction : row;
     justify-content : center;
     left : 0px;
-    padding : 0px 10px;
+    padding : 6px 10px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -196,4 +200,9 @@ border-bottom : 3px solid #B9975B;
 .banner-sucks-dropdown-col~.banner-sucks-dropdown-col
 {
     border-left : 1px solid lightgrey;
+}
+/* kind of a hacky way to select the blue divider table since it doesn't have a class */
+.pagebodydiv .plaintable:last-of-type{
+    margin-top : 22px;
+    margin-bottom : 5px;
 }
