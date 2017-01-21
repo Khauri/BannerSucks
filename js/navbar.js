@@ -68,8 +68,8 @@
                                 "</div>"+
                                 "<div class='banner-sucks-dropdown-col'>" + 
                                     "<a class='banner-sucks-menu-header'> Schedule </a>"+
-                                    "<a href='/pls/PROD/bwskfshd.P_CrseSchdDetl'> Student Detail Schedule </a>"+
                                     "<a href='/pls/PROD/bwskfshd.P_CrseSchd'> Weekly Schedule </a>"+
+                                    "<a href='/pls/PROD/bwskfshd.P_CrseSchdDetl'> My Classes </a>"+
                                     "<a href='/pls/PROD/bwckschd.p_disp_dyn_sched'> Class Schedule Search </a>"+
                                 "</div>"+
                                 "<div class='banner-sucks-dropdown-col'>" + 
@@ -97,16 +97,15 @@
                                 "</div>"+
                             "</div>"+
                         "</div>"+
-                        "<div class='banner-sucks-nav-item'> <a href='/pls/PROD/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&depth_in=2&columns_in=3'> Links </a> "+
-                            "<div class='banner-sucks-nav-dropdown'>"+
-                                "<div class='banner-sucks-dropdown-col'>"+
-                                    "<a class='banner-sucks-menu-header'> Other W&M Services </a>"+
-                                    "<a href='//degreeworks.wm.edu/' target='_blank'> Degree Works </a>"+
-                                    "<a href='//secure.touchnet.net/C20604_tsa/web/index.jsp' target='_blank'> eServices </a>" +
-                                    "<a href='//courselist.wm.edu/courselist/' target='_blank'> Courselist </a>"+
-                                "</div>"+
-                                "<div class='banner-sucks-dropdown-col'>"+
-                                    "<a href='/pls/PROD/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&depth_in=2&columns_in=3'> Site Map </a>"+
+                        "<div class='banner-sucks-nav-item'> <a href='/pls/PROD/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&depth_in=2&columns_in=3'> Resources </a> "+
+                            "<div class='banner-sucks-nav-dropdown '>"+
+                                "<div class='banner-sucks-navul2'>"+
+                                    "<div class='banner-sucks-nav-item'> <a href='//www.wm.edu/'>W&M Homepage</a> </div>"+
+                                    "<div class='banner-sucks-nav-item'> <a href='//blackboard.wm.edu/'> Blackboard </a> </div>"+
+                                    "<div class='banner-sucks-nav-item'> <a href='//degreeworks.wm.edu/' target='_blank'> Degree Works </a> </div>"+
+                                    "<div class='banner-sucks-nav-item'> <a href='/pls/PROD/GWGKTNET.p_redirect'> eServices </a> </div>" +
+                                    "<div class='banner-sucks-nav-item'> <a href='//courselist.wm.edu/courselist/' target='_blank'> Courselist </a> </div>"+
+                                    "<div class='banner-sucks-nav-item'> <a href='/pls/PROD/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&depth_in=2&columns_in=3'> Site Map </a> </div>"+
                                 "</div>"+
                             "</div>"+
                         "</div>"

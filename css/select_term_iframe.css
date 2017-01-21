@@ -1,0 +1,14 @@
+/** 
+ * On the main page when this script is injected it modifies the css of the iframe
+ */
+body{
+    background : none;
+}
+
+body>*, .plaintable{
+    display : none;
+}
+
+.pagebodydiv{
+    display : block !important;
+}

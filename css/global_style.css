@@ -143,12 +143,12 @@ border-bottom : 3px solid #B9975B;
     background-color : white;
 }
 
-.banner-sucks-nav-item:hover > a
+.banner-sucks-navul>.banner-sucks-nav-item:hover > a
 {
     border-bottom : 3px solid #115740;
 }
 
-.banner-sucks-nav-item > a
+.banner-sucks-navul>.banner-sucks-nav-item > a
 {
     text-transform: uppercase;
     padding : 16px;
@@ -164,7 +164,20 @@ border-bottom : 3px solid #B9975B;
     /* Adds a pretty neat gradient effect to the page
     * Might be a little strong though 
     */
-    box-shadow: 0px 24px 40px rgba(0,0,0,.1);
+    box-shadow: 0px 2px 30px rgba(0,0,0,.133);
+}
+
+.banner-sucks-navul2
+{
+    display : flex;
+    justify-content : center;
+    padding : 0px;
+    margin : 0px;
+}
+.banner-sucks-navul2 .banner-sucks-nav-item > a
+{
+    text-transform : none;
+    padding : 5px 16px;
 }
 
 .banner-sucks-nav-dropdown
@@ -180,6 +193,7 @@ border-bottom : 3px solid #B9975B;
     justify-content : center;
     left : 0px;
     padding : 6px 10px;
+    z-index : 9999;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
@@ -205,4 +219,85 @@ border-bottom : 3px solid #B9975B;
 .pagebodydiv .plaintable:last-of-type{
     margin-top : 22px;
     margin-bottom : 5px;
+}
+
+.content-wrapper{
+    display : flex;
+    flex-direction : row;
+    flex-wrap : wrap;
+    justify-content : space-between;
+}
+.content-column{
+    display : flex;
+    flex : 1;
+    margin-right : 10px;
+    min-width : 420px;
+}
+.content-wrapper-schedule{
+    position : relative;
+    padding: 0px 10px;
+    flex : 1 1 52%;
+}
+.schedule-overlay{
+    display : none;
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    background-color:rgba(0, 0, 0 ,0.05);
+}
+.schedule-overlay.active{
+    display : block;
+}
+/** Schedule Table **/
+.schedule-table{
+    width : 100%;
+    border-collapse:collapse;
+}
+.schedule-table tr{
+    position : relative;
+}
+.schedule-table th:nth-child(n+2){
+    padding : 5px;
+    font-weight : normal;
+    border : 1px solid lightblue;
+    text-align : center;
+    text-transform : capitalize;
+}
+.schedule-table tbody{
+    overflow-y : scroll;
+    max-height : 400px;
+}
+.schedule-table td{
+    position : relative;
+    height : 40px;
+}
+
+.schedule-table tr td:first-child{
+    position : relative;
+}
+
+.schedule-table tr td:first-child span{
+    position : absolute;
+    top : -20%;
+    right : 8px;
+    z-index : 0;
+}
+.schedule-table tr td:nth-child(n+2){
+    border-left : 1px solid lightblue;
+    border-right : 1px solid lightblue;
+}
+.schedule-table tr:nth-child(odd) td:nth-child(n+2){
+    border-bottom : 1px dashed lightblue; 
+}
+.schedule-table tr:nth-child(even) td:nth-child(n+2){
+    
+    border-bottom : 1px solid lightblue;
+}
+
+.schedule-class-item{
+    position : absolute;
+    font-size : .94em;
+    background-color : lightsteelblue;
+    color : white;
+    width : 100%;
 }

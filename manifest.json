@@ -9,14 +9,28 @@
   "content_scripts" : [
     {
         "matches" : ["*://banweb.wm.edu/*"],
-        "exclude_matches" : ["*://banweb.wm.edu/wtlhelp/wm_twbhhelp.htm"],
+        "exclude_matches" : ["*://banweb.wm.edu/wtlhelp/wm_twbhhelp.htm", "*://*/*.pdf"],
         "css" : ["css/global_style.css"],
-        "js" : ["js/header.js"],
+        "js" : [ "js/header.js" ],
+        "run_at" : "document_end"
+    },
+    {
+        "matches" : ["*://banweb.wm.edu/pls/PROD/twbkwbis.P_GenMenu?name=bmenu.P_MainMnu*"],
+        "js" : [ "js/banner2json.js", "js/homepage.js" ],
         "run_at" : "document_end"
     },
     {
         "matches" : ["*://banweb.wm.edu/*"],
-        "exclude_matches" : ["*://banweb.wm.edu/wtlhelp/wm_twbhhelp.htm","*://banweb.wm.edu/pls/PROD/twbkwbis.P_WWWLogin", "*://banweb.wm.edu/pls/PROD/twbkwbis.P_WWWLogin"],
+        "exclude_matches" : 
+            [
+                "*://banweb.wm.edu/wtlhelp/wm_twbhhelp.htm",
+                "*://banweb.wm.edu/pls/PROD/twbkwbis.P_WWWLogin", 
+                "*://banweb.wm.edu/pls/PROD/bwskwpro.P_ChooseProspectType",
+                "*://banweb.wm.edu/pls/PROD/bwskwpro.P_WebProspectMain*",
+                "*://banweb.wm.edu/pls/PROD/twbkwbis.P_GenMenu?name=bmenu.P_FAAUnsecMnu",
+                "*://banweb.wm.edu/pls/PROD/twbkwbis.P_GenMenu?name=bmenu.P_FAFormsMnu",
+                "*://*/*.pdf"
+            ],
         "js" : ["js/navbar.js"],
         "run_at" : "document_end"
     },
@@ -25,5 +39,5 @@
         "css" : ["css/login_page.css"]
     }
   ],
-  "web_accessible_resources": ["images/*"]
+  "web_accessible_resources": ["images/*", "css/select_term_iframe.css"]
 }
