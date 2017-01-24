@@ -105,6 +105,7 @@
                                     "<div class='banner-sucks-nav-item'> <a href='//degreeworks.wm.edu/' target='_blank'> Degree Works </a> </div>"+
                                     "<div class='banner-sucks-nav-item'> <a href='/pls/PROD/GWGKTNET.p_redirect'> eServices </a> </div>" +
                                     "<div class='banner-sucks-nav-item'> <a href='//courselist.wm.edu/courselist/' target='_blank'> Courselist </a> </div>"+
+                                    "<div class='banner-sucks-nav-item'> <a href='//wm-csm.symplicity.com/students' target='_blank'> Tribe Careers </a> </div>"+
                                     "<div class='banner-sucks-nav-item'> <a href='/pls/PROD/twbksite.P_DispSiteMap?menu_name_in=bmenu.P_MainMnu&depth_in=2&columns_in=3'> Site Map </a> </div>"+
                                 "</div>"+
                             "</div>"+

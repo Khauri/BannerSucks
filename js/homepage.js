@@ -57,7 +57,7 @@
     schedule_wrapper.innerHTML = schedule_html;
 
     Banner.getSchedule( function( schedule ){
-        if( schedule ){
+        if( schedule && schedule.length > 1 ){
             for(var i = 0; i < schedule.length; i++){
                 var klass = schedule[i]; // "class" is a reserved keyword
                 klass.days.map( function( classDay ){
@@ -80,6 +80,7 @@
                     }
                 });
             }
+            document.querySelector('.section').scrollTop = document.querySelector('.schedule-class-item').parentNode.parentNode.offsetTop || 0;
         }else{
             // display information saying a schedule could not be aquired
             document.querySelector('.schedule-overlay').classList.add('active');
