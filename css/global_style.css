@@ -1,7 +1,7 @@
 /**
  * global_style.css
  *
- * ---------  CONTENTS -------------
+ * ---------  CONTENTS [needs updating]  -------------
  * I.       Normalize Elements
  * II.      Hide Unwanted Items
  * III.     Banner Styles
@@ -240,12 +240,13 @@ border-bottom : 3px solid #B9975B;
     position : relative;
     padding-top: 35px;
     flex : 1 1 40%;
+    display : flex;
+    flex-direction : column;
 }
 .section{
     width : 100%;
     overflow: hidden;
     height: 275px;
-    padding : 10px;
 }
 .section:hover{
     overflow-y : scroll;
@@ -348,4 +349,58 @@ border-bottom : 3px solid #B9975B;
     vertical-align: middle;
     box-shadow: 0px 3px 4px 0px rgba(0,0,0,0.1);
     z-index : 5;
+}
+
+.class-information{
+    width : 100%;
+    background-color:white;
+    z-index : 15;
+}
+
+.class-list{
+    margin-left : 12%;
+    margin-top : 15px;
+    padding-top : 15px;
+    border-top: 1px dashed rgba(47, 79, 79, .2);
+    position : relative;
+    display : flex;
+    flex-direction : column;
+    align-items:flex-end;
+}
+.class-display{
+    margin : 2px 0px;
+    padding : 5px;
+    width : 100%;
+    background-color : rgba(106,90,205,0);
+    color : darkslategray;
+    text-overflow: ellipsis;
+    border-radius : 6px;
+    border : none;
+    text-align : left;
+}
+.class-display:hover{
+    background-color : rgba(106,90,205,.7);
+    color : white;
+    cursor : pointer;
+}
+.class-display:focus{
+    outline:0;
+    background-color : rgba(106,90,205,.7);
+    color : white;
+}
+.class-display:focus .class-display-info{
+    display:block;
+}
+.class-display-head:before{
+    content : "▾";
+}
+.class-display:focus .class-display-head:before{
+    content : "▸";
+}
+.class-display-info{
+    display : none;
+    padding-left : 10px;
+}
+.class-display-info>div{
+    margin-top : 5px;
 }
