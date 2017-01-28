@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name" : "Banner Sucks",
   "description" : "Fixes the awuflness that is Banner",
-  "version" : "1.1",
+  "version" : "1.11",
   "icons" : { 
       "128": "icon128.png" 
     },
